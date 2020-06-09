@@ -7,42 +7,40 @@ import org.springframework.stereotype.Repository;
 import com.pshaikh.color_service.persons.Person;
 
 @Repository
-public class PersonCsvDatasource implements PersonDatasource {
-
+public class PersonCsvDs implements PersonDatasource {
 	@Override
-	public List<Person> selectAll() {
+	public List<PersonEntity> selectAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Person selectById(int id) {
+	public PersonEntity selectById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Person> selectByColor(String color) {
+	public List<PersonEntity> selectByColor(String color) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Person create(Person p) {
+	public PersonEntity create(Person person) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Person update(Person p) {
+	public PersonEntity update(Person person) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Person delete(Person p) {
+	public PersonEntity delete(Person person) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

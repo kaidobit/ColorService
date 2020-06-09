@@ -5,15 +5,15 @@ import java.util.List;
 import com.pshaikh.color_service.persons.Person;
 
 public interface PersonDatasource {
-	List<Person> selectAll();
+	List<PersonEntity> selectAll();
 	
-	Person selectById(int id);
+	PersonEntity selectById(int id);
 	
-	List<Person> selectByColor(String color);
+	List<PersonEntity> selectByColor(String color);
 	
-	Person create(Person person);
+	PersonEntity create(Person person);
 	
-	Person update(Person person);
+	PersonEntity update(Person person);
 	
-	Person delete(Person person);
+	PersonEntity delete(Person person);
 }
