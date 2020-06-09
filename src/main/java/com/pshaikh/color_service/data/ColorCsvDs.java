@@ -2,8 +2,6 @@ package com.pshaikh.color_service.data;
 
 import org.springframework.stereotype.Repository;
 
-import com.pshaikh.color_service.persons.Color;
-
 @Repository
 public class ColorCsvDs implements ColorDatasource {
 	@Override
