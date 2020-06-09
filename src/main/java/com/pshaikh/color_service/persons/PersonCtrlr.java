@@ -3,41 +3,41 @@ package com.pshaikh.color_service.persons;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+
+import com.pshaikh.color_service.data.PersonDatasource;
 
 @Controller
 public class PersonCtrlr {
+	@Autowired
+	PersonDatasource ds;
+	
 	public List<Person> selectAll() {
-		//TODO implementation
-		
-		return new ArrayList<Person>();
+		return ds.selectAll();
 	}
 	
 	public Person selectById(int id) {
-		//TODO implementation
-		
-		return new Person();
+		return ds.selectById(id);
 	}
 	
 	public List<Person> selectByColor(String color) {
-		//TODO implementation
-		
-		return new ArrayList<Person>();
+		return ds.selectByColor(color);
 	}
 	
-	public Person create(Person p) {
+	public Person create(Person person) {
 		//TODO implementation
 		
-		return p;
+		return ds.create(person);
 	}
 	
-	public Person update(Person p) {
+	public Person update(Person person) {
 		//TODO implementation
 		
-		return p;
+		return ds.update(person);
 	}
 	
-	public Person delete(Person p) {
-		return p;
+	public Person delete(Person person) {
+		return ds.delete(person);
 	}
 }
